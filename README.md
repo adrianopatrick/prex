@@ -6,5 +6,5 @@ Apresentação em JavaScript da sessão técnica sobre ReactJS
 
 MIT licensed
 
-Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+Copyright (C) 2017 - Adriano Patrick Cunha
 

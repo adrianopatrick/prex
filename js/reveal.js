@@ -134,6 +134,7 @@ var Reveal = (function(){
 	 * not found, it is created.
 	 */
 	function setupDOM() {
+
 		// Cache references to key DOM elements
 		dom.theme = document.querySelector( '#theme' );
 		dom.wrapper = document.querySelector( '.reveal' );
@@ -712,6 +713,14 @@ var Reveal = (function(){
 		// stacks
 		if( previousSlide ) {
 			previousSlide.classList.remove( 'present' );
+		}
+
+		if(currentSlide.id === "first") {
+            var background = document.querySelector('.state-background');
+            background.style = "background-image: url(\"img/fortaleza4.jpg\"); background-repeat: no-repeat; background-size: 100% 100%;";1
+        } else {
+            var background = document.querySelector('.state-background');
+            background.style = "none";
 		}
 	}
 

@@ -715,11 +715,16 @@ var Reveal = (function(){
 			previousSlide.classList.remove( 'present' );
 		}
 
-		if(currentSlide.id === "first") {
-            var background = document.querySelector('.state-background');
+        var background = document.querySelector('.state-background');
+        if(currentSlide.id === "first") {
             background.style = "background-image: url(\"img/fortaleza4.jpg\"); background-repeat: no-repeat; background-size: 100% 100%;";1
-        } else {
-            var background = document.querySelector('.state-background');
+        } else if (currentSlide.id === "second") {
+			background.style = "background-color: #AAE2E3;";
+		} else if (currentSlide.id === "eighth" || currentSlide.id === "nineth") {
+        	background.style = 'background-color: #000000';
+		} else if(currentSlide.id === "endth") {
+        	background.style = 'background-color: #000000';
+		} else {
             background.style = "none";
 		}
 	}
